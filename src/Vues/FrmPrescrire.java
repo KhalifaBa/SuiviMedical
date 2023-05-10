@@ -89,7 +89,7 @@ public class FrmPrescrire extends JFrame
                 {
                     String nomPatient = cboPatients.getSelectedItem().toString();
                     String nomMedecin = cboMedecins.getSelectedItem().toString();
-                    String date = String.valueOf(dcDateConsultation.getDateFormatString());
+                    String date = String.valueOf(dcDateConsultation.getDateFormatString()); //le pb était ici
                     int numConsulation = Integer.parseInt(txtNumeroConsultation.getText());
                     int numMedicament = Integer.parseInt(tblMedicaments.getValueAt(tblMedicaments.getSelectedRow(),0).toString());
                     int quantite = Integer.parseInt(tblMedicaments.getValueAt(tblMedicaments.getSelectedRow(),3).toString());
